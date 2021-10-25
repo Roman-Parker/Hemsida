@@ -14,7 +14,7 @@ body{
 }
 /*Ändrar utsende på listor*/
 ul{
-   
+   margin-left: 50px;
 }
 /*Ändrar utsendet för*/
 ul li {
@@ -31,4 +31,9 @@ ul li a{
     color: #1e1e1d;
     padding: 0 20px ;
     display: block;
+}
+ul li a:hover{
+    
+    color:grey;
+    
 }
