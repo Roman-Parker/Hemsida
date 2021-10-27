@@ -44,7 +44,7 @@ ul li a{
 }
 ul li a:hover{
     
-    color:grey;
+    color:#a3f7bf;
     
 }
 h1{
@@ -55,7 +55,7 @@ h1{
     text-shadow: 5px 5px 8px lightslategrey;
 }
 .burger{
-    
+    display: none;
 }
 .burger div{
     width:25px;
