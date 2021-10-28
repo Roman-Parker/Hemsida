@@ -14,33 +14,30 @@ nav{
     background-color: #222831;
 
 }
-body{
-    background-color: #eee;
-}
+
 /*Ändrar utsende på listor*/
-ul{
+.nav-links{
    /*margin-left: 50px;*/
    display: flex;
    justify-content: space-around;
+   width: 50%;
    
 }
 /*Ändrar utsendet för*/
-ul li {
+.nav-links li {
     list-style: none;
-    display: inline-block;
-    float: left;
-    line-height:100px
+    
     
 }
-ul li a{
+.nav-links a{
     text-decoration: none;
     font-size: 15;
     font-family:'Zen Kaku Gothic New', sans-serif;font-size: 14px;
     color:rgb(238, 226, 226);
-    letter-spacing: 2px;
-    padding: 0 20px ;
-    display: block;
-    font-weight: bolder;
+    letter-spacing: 3px;
+    padding: 0 20px ; 
+    
+    font-weight: bold;
 }
 ul li a:hover{
     
@@ -56,6 +53,7 @@ h1{
 }
 .burger{
     display: none;
+    cursor: pointer;
 }
 .burger div{
     width:25px;
@@ -63,8 +61,39 @@ h1{
     background-color:rgb(238, 226, 226);
     margin:5px;
 }
+@media  screen and (max-width: 1024px) {
+    .nav-links{
+        width:60%;
+    }
+}
 @media screen and (max-width:768px){
     body{
-        display:none;
+        overflow-x: hidden;
     }
+    
+    .nav-links{
+        position: absolute;
+        right:0px;
+        height:92vh;
+        top:8vh;
+        background-color: #222831;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width:50%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+        
+    }
+    .nav-links li{
+        opacity:0;
+    }
+    .burger{
+        display: block;
+        
+    }
+    
+}
+.nav-active{
+    transform: translateX(0%);
 }
