@@ -18,6 +18,8 @@ const navSlide = () =>{
             }
             console.log(index/7);
         });
+        //Animarear burgaren
+        burger.classList.toggle("toggle");
     });
     
 }
