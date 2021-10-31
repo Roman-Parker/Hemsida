@@ -133,12 +133,14 @@ nav{
     
 }
 .content{
+    float: left;
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     border: 2px solid #a3f7bf;
     height: 100px;
-    width: 100%;
+    width: 50%;
+    padding: 10px;
     background-color: #393e46;
     color:rgb(238, 226, 226);;
 }
@@ -146,7 +148,6 @@ nav{
     content: "";
     display: table;
     clear: both;
-    background-color: olive;
 }
 .column{
     float: left;
@@ -160,6 +161,14 @@ nav{
     text-align: center;
     font-family: 'Poppins', sans-serif;
 }
-#indexBody{
-    background-image: url(pexels-photo-7213438.webp);
+.indexImage img{
+    float:right;
+    display:block;
+    max-width:50%;
+    height: auto;
+}
+.indexWrapper{
+    content: "";
+    display: block;
+    clear: both;
 }
