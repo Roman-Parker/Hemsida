@@ -45,7 +45,7 @@ nav{
     color:#a3f7bf;
     
 }
-.headers{
+.headers {
   padding: 50px;
   text-align: center;
   font-size: 30px;
@@ -94,6 +94,10 @@ nav{
         display: block;
         
     }
+    .wrapper{
+        display: flex;
+
+    }
     
 }
 .nav-active{
@@ -138,8 +142,24 @@ nav{
     background-color: #393e46;
     color:rgb(238, 226, 226);;
 }
-#wrapper{
-    display: flex;
-    border: 1px solid black;
-    margin-left: 12.5%;
+.wrapper:after {
+    content: "";
+    display: table;
+    clear: both;
+    background-color: olive;
+}
+.column{
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+}
+.column h2{
+    text-align: center;
+}
+.column p{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+#indexBody{
+    background-image: url(pexels-photo-7213438.webp);
 }
