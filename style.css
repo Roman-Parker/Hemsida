@@ -46,12 +46,12 @@ nav{
     
 }
 .headers {
-  padding: 50px;
+  padding: 20px;
   text-align: center;
-  font-size: 30px;
     font-family: Arial, Helvetica, sans-serif;
     text-shadow: 5px 5px 8px lightslategrey;
 }
+
 .burger{
     display: none;
     cursor: pointer;
@@ -98,6 +98,10 @@ nav{
         display: flex;
 
     }
+    .indexImage{
+        display: none;
+    }
+    
     
 }
 .nav-active{
@@ -126,7 +130,8 @@ nav{
     
     text-align:center;
     font-family: 'Poppins', sans-serif;
-
+    padding-right:15%;
+    padding-left:15%;
     font-family: 'Zen Kaku Gothic New', sans-serif;
     font-size: 14px;
     font-weight: bold;
@@ -148,8 +153,10 @@ nav{
     content: "";
     display: table;
     clear: both;
+    border: black;
 }
 .column{
+    border: 1px solid black;
     float: left;
     width: 33.33%;
     padding: 10px;
