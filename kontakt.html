@@ -29,7 +29,44 @@
         </div>
     </nav>
     <h1 class="headers">Kontakt</h1>
-    <p></p>
+    <p class="intro">Mail: roman.parker.syne21lin@tucswedens.se      Telefonnummer: 0793494725</p>
+    <div style="background-color:green;">
+    <form  method="post" name="contactForm" onsubmit="alertUser()">
+        <div>
+            <label for="namn">Namn:
+                <br>
+                <input type="text" name="namn" id="namn" placeholder="ange ditt namn" required>
+            </label>
+        </div>
+        <div>
+            <label for="epost">E-mail:
+                <br>
+                <input type="email" name="Epost" id="epost" placeholder="ange din epost" required>
+            </label>
+        </div>
+        <div>
+            <label for="telefon">Telefon nummer:
+                <br>
+                <input type="tel" name="telefon" id="telefon" placeholder="ange ditt namn">
+            </label>
+        </div>
+        <br>
+        <div>
+            <label>Meddelande:
+            <br> 
+            <textarea name="meddelande" id="meddelande" placeholder="skriv något"></textarea>
+        </label>
+        </div>
+        <div>
+            <input type="checkbox" value="gdpr" required> Jag godkänner att mina uppgifter lagras
+    
+        </div>
+        <div>
+            <input type="submit" value="skicka">
+        </div>
+        </form>
+        <p id="msg"></p>
+    </div>
     <script src="javascript.js"></script>
 </body>
 </html>
