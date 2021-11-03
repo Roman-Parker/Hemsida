@@ -75,6 +75,7 @@ nav{
     
     .nav-links{
         position: absolute;
+        z-index: 999; /*Ser till att menyn visas överst*/
         right:0px;
         height:92vh;
         top:8vh;
@@ -185,9 +186,6 @@ nav{
     padding-bottom: 56.25%;
     padding-top:25px;
     height:0px;
-
-
-
 }
 .iframeContainer iframe{
     position:absolute;
