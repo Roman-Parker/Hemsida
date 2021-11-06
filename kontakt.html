@@ -29,40 +29,37 @@
         </div>
     </nav>
     <h1 class="headers">Kontakt</h1>
-    <p class="intro">Mail: roman.parker.syne21lin@tucswedens.se      Telefonnummer: 0793494725</p>
-    <div style="background-color:green;">
+    <p style="font-family: Verdana, Geneva, Tahoma, sans-serif;"" class="intro">E-Mail: roman@parker.pm</p>
+    <div class="contactForm">
     <form  method="post" name="contactForm" onsubmit="alertUser()">
         <div>
             <label for="namn">Namn:
                 <br>
-                <input type="text" name="namn" id="namn" placeholder="ange ditt namn" required>
+                <input type="text" name="namn" id="namn" placeholder="Ange ditt namn" required>
             </label>
         </div>
         <div>
             <label for="epost">E-mail:
                 <br>
-                <input type="email" name="Epost" id="epost" placeholder="ange din epost" required>
+                <input type="email" name="Epost" id="epost" placeholder="Ange din E-Mail" required>
             </label>
         </div>
         <div>
             <label for="telefon">Telefon nummer:
                 <br>
-                <input type="tel" name="telefon" id="telefon" placeholder="ange ditt namn">
+                <input type="tel" name="telefon" id="telefon" placeholder="Ange ditt telefonnummer">
             </label>
         </div>
         <br>
         <div>
             <label>Meddelande:
             <br> 
-            <textarea name="meddelande" id="meddelande" placeholder="skriv något"></textarea>
+            <textarea name="meddelande" id="meddelande"></textarea>
         </label>
         </div>
+        
         <div>
-            <input type="checkbox" value="gdpr" required> Jag godkänner att mina uppgifter lagras
-    
-        </div>
-        <div>
-            <input type="submit" value="skicka">
+            <input type="submit" value="Skicka">
         </div>
         </form>
         <p id="msg"></p>

@@ -5,6 +5,8 @@
     box-sizing: border-box;
 }
 nav{
+    position: sticky;
+    top:0;
     width: 100%;
     display: flex;
     justify-content: space-around;
@@ -45,6 +47,7 @@ nav{
     
 }
 .headers {
+
   padding: 20px;
   text-align: center;
     font-family: Arial, Helvetica, sans-serif;
@@ -148,7 +151,7 @@ nav{
     width: 50%;
     padding: 10px;
     background-color: #393e46;
-    color:rgb(238, 226, 226);;
+    color:rgb(238, 226, 226);
 }
 .wrapper:after {
     content: "";
@@ -183,6 +186,7 @@ nav{
 }
 .iframeContainer{
     position: relative;
+    z-index:-1;
     padding-bottom: 56.25%;
     padding-top:25px;
     height:0px;
@@ -200,4 +204,50 @@ nav{
 .videoWrapper{
     margin:auto;
     width:80%;
+}
+.indexBody{
+    margin-top: 100x;
+}
+.contactForm{
+    position: relative; /*or fixed*/;
+    width: 50%;
+    height: 500px;
+    margin: 0 auto;
+    padding: 10px;
+
+  box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+}
+.contactForm input{
+    padding:10px;
+    margin:10px;
+    border:0;
+    border-bottom: 1px solid #eee;
+    width:95%;
+
+  box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+  border-radius: 10px;
+  
+}
+.contactForm label{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding:10px;
+}
+.contactForm textarea{
+    padding:10px;
+    margin:10px;
+    border:0;
+    border-bottom: 1px solid #eee;
+    width:95%;
+    height: 100px;
+
+  box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+}
+.contactForm input[type=submit]{
+    background-color: #222831;
+    color:rgb(238, 226, 226);
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+} 
+.contactForm input[type="submit"]:hover{
+    color:#a3f7bf;
+    
 }
