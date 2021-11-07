@@ -69,6 +69,7 @@ nav{
 @media  screen and (max-width: 1024px) {
     .nav-links{
         width:60%;
+        z-index:999;
     }
 }
 @media screen and (max-width:768px){
@@ -131,8 +132,6 @@ nav{
     transform: rotate(45deg) translate(-5px,-6px);
 }
 .intro{
-    
-    text-align:center;
     font-family: 'Poppins', sans-serif;
     padding-right:15%;
     padding-left:15%;
@@ -203,19 +202,18 @@ nav{
 }
 .videoWrapper{
     margin:auto;
-    width:80%;
+    width:70%;
 }
 .indexBody{
     margin-top: 100x;
 }
 .contactForm{
-    position: relative; /*or fixed*/;
+    position: relative;
     width: 50%;
-    height: 500px;
+    height: 400px;
     margin: 0 auto;
     padding: 10px;
-
-  box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
 }
 .contactForm input{
     padding:10px;
@@ -223,9 +221,8 @@ nav{
     border:0;
     border-bottom: 1px solid #eee;
     width:95%;
-
-  box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
-  border-radius: 10px;
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+    border-radius: 10px;
   
 }
 .contactForm label{
@@ -239,8 +236,9 @@ nav{
     border-bottom: 1px solid #eee;
     width:95%;
     height: 100px;
-
-  box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+    border-radius: 10px;
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+    resize: none;
 }
 .contactForm input[type=submit]{
     background-color: #222831;

@@ -23,7 +23,5 @@ const navSlide = () =>{
     });
     
 }
-function alertUser(){
-    alert("Meddelandet har skickats!")
-}
+
 navSlide();
