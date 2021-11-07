@@ -39,18 +39,31 @@
         I den versionen angavs 14 föresksrifter varav många i dagens läge fortfarande är en del av WCAG. Det har gets ut nya versioner där det har tillkommit
         nya föreskrifter, 2005 utgavs en standard för skärmläsare som läser upp innehållet på en hemsida vilket används av blinda personer. Den senaste utgivan av
         WCAG gavs ut 2018 och innehåll främst nya föreskrifter för enheter med pekskärm och andra portabla enheter men även fler riktlinjer för kognitiva
-        funktionsnedsättningar.
+        funktionsnedsättningar. Nedanför beskrivs några av de vanligaste felen.
 
     </p>
     <h3 class="headers">Kontrast</h3>
-    <p>Ett vanligt problem som försämrar tillgängligheten på en hemsida för personer med 
+    <p class="intro">Ett vanligt problem som försämrar tillgängligheten på en hemsida för personer med 
         synproblem är kontrasten mellan olika färger på hemsidan. En text eller rubrik kan vara
         svår att läsa om textens färg är svart och texten är placerad på en mörk bakgrundsbild. Därför ska 
         man alltid utgå från den delen på bakgrunden som är närmast i kontrast i jämnförelse med
         textens färg för att avgöra om kontrasten är för liten och därmed försämrar tillgängligheten. Det 
         finns verktyg som axe devtools som skannar hemsidan efter bristande kontraster.
     </p>
-
+    <h3 class="headers">Alternativ text till bilder</h3>
+    <p class="intro"> I HTML är det möjligt att ange en alternativ text till en bild. Denna text visas
+        ifall inte bilden kan laddas in av webläsaren. Alternativa texten är även viktig för skärmläsare som
+        används av personer som är blinda eller har andra funktionsnedsättningar som gör det svårt för dem att 
+        se innehållet på hemsidan. I dessa fall kan skärmläsaren läsa upp vad som står på hemsidan och beskriva
+        bilderna på hemsidan med hjälp av den alternativa texten som ska vara en beskrivning av bilden.
+    </p>
+    <h3 class="headers">Otydlig navigation</h3>
+    <p class="intro">Det är särskillt viktigt att navigationen på en hemsida är tillgänglightsanpassad. Menyn ska inte 
+        innehålla onödigt många alternativ att välja mellan och varje alternativ i menyn ska tydligt beskriva vad sidan 
+        som användaren länkas till innehåller. Ett vanligt sätt som personer med funktionsnedsättningar navigerar en hemsida
+        på är genom att tabba sig igenom hemsidan. Det är därför viktigt att det går att tabba sig igenom menyn och alla andra
+        element på hemsidan så som textrutor och knappar.
+    </p>
     <br>
     <script src="javascript.js"></script>
 </body>

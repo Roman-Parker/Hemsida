@@ -104,7 +104,10 @@ nav{
 
     }
     .indexImage{
-        display: none;
+        float:none;
+    }
+    .content{
+        float:none;
     }
     
     
@@ -141,7 +144,6 @@ nav{
     
 }
 .content{
-    float: left;
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -151,6 +153,7 @@ nav{
     padding: 10px;
     background-color: #393e46;
     color:rgb(238, 226, 226);
+    float:left;
 }
 .wrapper:after {
     content: "";
@@ -172,8 +175,7 @@ nav{
     font-family: 'Poppins', sans-serif;
 }
 .indexImage img{
-    float:right;
-    display:block;
+    display:flex;
     max-width:50%;
     height: 50%;
 }
@@ -213,6 +215,7 @@ nav{
     height: 400px;
     margin: 0 auto;
     padding: 10px;
+    z-index: -1;
     box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
 }
 .contactForm input{
