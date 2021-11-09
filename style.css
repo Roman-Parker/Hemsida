@@ -13,7 +13,7 @@ nav{
     align-items: center;
     min-height: 8vh;
     background-color: #222831;
-
+    z-index: 999;
 }
 
 /*Ändrar utsende på listor*/
@@ -71,6 +71,10 @@ nav{
         width:60%;
         z-index:999;
     }
+    .intro{
+        padding-left: 10%;
+        padding-right:10%;
+    }
     
 }
 @media screen and (max-width:768px){
@@ -104,11 +108,9 @@ nav{
         display: flex;
 
     }
-    .indexImage{
-        float:none;
-    }
-    .content a{
-        padding-left: 0%;
+    .intro{
+        padding-right:5%;
+        padding-left:5%;
     }
     
     
@@ -136,9 +138,8 @@ nav{
     transform: rotate(45deg) translate(-5px,-6px);
 }
 .intro{
-    font-family: 'Poppins', sans-serif;
-    padding-right:15%;
-    padding-left:15%;
+    padding-right:20%;
+    padding-left:20%;
     font-family: 'Zen Kaku Gothic New', sans-serif;
     font-size: 14px;
     font-weight: bold;
@@ -155,6 +156,8 @@ nav{
     text-align:justify;
     list-style: none;
     text-decoration: none;
+    z-index: -1;
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.39);
 }
 .content a{
     position: relative;
@@ -172,7 +175,7 @@ nav{
 }
 .subheader{
     text-decoration: none;
-    margin-left: 1%;
+    margin-left: 3%;
 }
 
 .wrapper:after {
@@ -201,6 +204,7 @@ nav{
     margin-left: auto;
     margin-right: auto;
     height: auto;
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.39);
 }
 .indexWrapper{
     content: "";
@@ -227,7 +231,7 @@ nav{
 }
 .videoWrapper{
     margin:auto;
-    width:70%;
+    width:60%;
 }
 .indexBody{
     margin-top: 100x;
@@ -238,8 +242,8 @@ nav{
     height: 400px;
     margin: 0 auto;
     padding: 10px;
-    z-index: -1;
-    box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.20);
+    z-index: 1;
 }
 .contactForm input{
     padding:10px;
@@ -247,7 +251,7 @@ nav{
     border:0;
     border-bottom: 1px solid #eee;
     width:95%;
-    box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.20);
     border-radius: 10px;
   
 }
@@ -263,13 +267,13 @@ nav{
     width:95%;
     height: 100px;
     border-radius: 10px;
-    box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.20);
     resize: none;
 }
 .contactForm input[type=submit]{
     background-color: #222831;
     color:rgb(238, 226, 226);
-    box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.20);
 } 
 .contactForm input[type="submit"]:hover{
     color:#a3f7bf;
