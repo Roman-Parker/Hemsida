@@ -141,7 +141,7 @@ nav{
     padding-right:20%;
     padding-left:20%;
     font-family: 'Zen Kaku Gothic New', sans-serif;
-    font-size: 14px;
+    font-size: 15px;
     font-weight: bold;
     
 }
@@ -218,6 +218,7 @@ nav{
     padding-bottom: 56.25%;
     padding-top:25px;
     height:0px;
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.39);
 }
 .iframeContainer iframe{
     position:absolute;
