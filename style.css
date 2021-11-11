@@ -106,8 +106,8 @@ nav{
     }
     .wrapper{
         display: flex;
-
-    } 
+    }
+    
 }
 .nav-active{
     transform: translateX(0%);
@@ -152,12 +152,14 @@ nav{
     text-decoration: none;
     z-index: 1;
     box-shadow:0 0 15px 4px rgba(0,0,0,0.39);
+    
 }
 .content a{
     position: relative;
     color:rgb(238, 226, 226);
     font-family: 'Zen Kaku Gothic New', sans-serif;
     font-weight: bold;
+    cursor: pointer;
 }
 .content a:hover{
     
@@ -273,4 +275,21 @@ nav{
 .contactForm input[type="submit"]:hover{
     color:#a3f7bf;
     
+}
+.thanksButton{
+    display: inline-block;
+        background-color: #7b38d8;
+        border-radius: 10px;
+        border: 4px double #cccccc;
+        color: #eeeeee;
+        text-align: center;
+        font-size: 28px;
+        padding: 20px;
+        width: 30%;
+        -webkit-transition: all 0.5s;
+        -moz-transition: all 0.5s;
+        -o-transition: all 0.5s;
+        transition: all 0.5s;
+        cursor: pointer;
+        margin: 10%;
 }

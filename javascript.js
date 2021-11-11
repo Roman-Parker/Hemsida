@@ -23,5 +23,8 @@ const navSlide = () =>{
     });
     
 }
+function alertUser(){
+    alert("Skickar meddelande!")
+}
 
 navSlide();
