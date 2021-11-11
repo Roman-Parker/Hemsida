@@ -33,20 +33,30 @@
     <h1 class="headers">Internet</h1>
     <p></p>
     <h2 id="klient", class="headers">Klient-server-modellen</h2>
-    <p class="intro">Många av dagens webtjänster och andra applikationer använder sig av klient-server modellen 
+    <p class="intro">Många av dagens webbtjänster och andra applikationer använder sig av klient-server modellen 
         som bygger på att en användare kör ett program lokalt på datorn eller
         annan enhet som kör ett program som till exempel en webbläsare som tjänar som klient. 
         Klientens uppgift är att integera med användaren och ta emot information. Informationen
-        som klienten tar emot skickas sedan till en server där informationen sparas och bearbetas.
+        som klienten tar emot skickas sedan till en server där informationen sparas och bearbetas. Att lagra det mesta av informationen 
+        på en eller flera centrala servrar underlättar programmuppdateringar och ger bättre säkerhet då avändardata endast kan läcka
+        från ett enda ställe som är servern. En annan fördel är att det är enkelt att skala upp och ner på server/klient kapaciteten vid behov.
     </p>
     <h2 id="internetkom", class="headers">Internetkommunikation</h2>
     <p class="intro">Två av de viktigaste protokollen i dagens internet är IP och DNS protokollen. IP står för 
         Internet Protocol och används för att specifiera hur en IP-address ska se ut. En IP-address består av 
         ett 32 bitars nummer och används för att identifiera och lokalisera mottagarens enheter som kan vara en mobil, dator eller server 
         I dagens läge är det ingen som skriver in dessa addresser i webläsaren för att komma åt en hemsida och det har vi 
-        DNS protokollet att tacka för. DNS är en förkortning för
+        DNS protokollet att tacka för. DNS är en förkortning för Domain Name System. Varje internetleverantör 
+        som telia har en DNS server och när du skriver en address som w3schools.com i webbläsaren som skickas
+        en förfrågan till DNS servern som skickar tillbaka rätt IP-address som är kopplad till domänen w3schools.com. Nu kan webläsaren
+        skicka HTTPS förfrågan till w3schools.com server med ett paket som har fått rätt IP-address av DNS servern.
+        <br>
+        <br>
+        Denna video förklarar lite närmare hur dagens internet fungerar och hur alla protokoll och olika enheter sammarbetar för att
+        ge oss tillgång till alla webbtjänster som finns idag.
     </p>
     <br>
+    
     <div class="videoWrapper">
         <div class="iframeContainer">
             <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/AEaKrq3SpW8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -56,17 +66,22 @@
     <p class="intro">För att alla olika enheter och programvaror ska kunna kommunicera med varandra utan att det sker missförstånd eller 
         att data skickas på fel sätt så har man skapat olika protokoller. Varje protokoll beskriver hur data ska skickas och hur 
         den ska formatteras. Protokoll är lite som ett språk för datorer som alla kan förstå oberoende vad för hårdvara eller mjukvara de två enheterna använder.
-        Kan jämnföras med engelskan som gör att vi människor kan komunicera med varandra även om vi har olika modersmål.
+        Kan jämnföras med engelskan som gör att vi människor kan kommunicera med varandra även om vi har olika modersmål.
     
     </p>
     <h2 id="http" , class="headers">HTTP/HTTPS</h2>
     <p class="intro">HTTP/S är ett av de absolut vanligaste protokollen i dagens internet. HTTP står för "Hyper Text Transfer Protocol". S:et i HTTPS står för secure och har lagts till då
         några av funktioner av ett protokol som heter TLS har lagts till HTTP som gjort det möjligt att kryptera informationen och skapa ett säkrare protokoll. HTTPS är 
-    viktigt framförallt på öppna och osäkra nätverk det går att avlyssna trafiken om det föråldrade HTTP protokollet används.</p>
+    viktigt framförallt på öppna och osäkra nätverk det går att avlyssna trafiken om det föråldrade HTTP protokollet används. När du försöker att komma åt en hemsida på nätet
+    så skickar webbläsaren en HTTP/HTTPS förfrågan till servern som sedan skickar data tillbaka.</p>
     <h2 id="ftp" , class="headers">FTP/FTPS</h2>
-    <p class="intro">För överföring av filer över nätvärk används ofta program som implementerar FTP/FTPS protokollen. FTP är en förkortning för "File Transfer Protocol". Skillnaeden mellan FTP och FTPS 
+    <p class="intro">För överföring av filer över nätvärk används ofta program som implementerar FTP/FTPS protokollen. Ett exempel är FileZilla som vi har använt i kursen för att 
+        skicka filerna för vår hemsida till en webbserver. FTP är en förkortning för "File Transfer Protocol". Skillnaeden mellan FTP och FTPS 
         är att FTPS har likt som HTTPS implementerat andra protokol som TLS/SSL vilket skyddar mot man-in-the-middle attacker som kan  avlyssna trafiken och snappa up filer som skickas via FTP, detta är
         inte möjligt genom FTPS.
+
+        <br>
+        <br>
     </p>
     <script src="javascript.js"></script>
 </body>
