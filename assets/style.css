@@ -115,6 +115,7 @@ nav{
 .nav-active{
     transform: translateX(0%);
 }
+/*fade effekt för menyn som glider in i mobilvyn*/
 @keyframes navLinkFade{
     from{
         opacity: 0;
@@ -125,6 +126,7 @@ nav{
         transform: translateX(0px);
     }
 }
+
 .toggle .firstLine{
     transform: rotate(-45deg) translate(-5px,6px);
 }
@@ -134,7 +136,8 @@ nav{
 .toggle .thirdLine{
     transform: rotate(45deg) translate(-5px,-6px);
 }
-.intro{
+/*Styling till samtliga paragrafer*/
+.text-style{
     padding-right:20%;
     padding-left:20%;
     font-family: 'Zen Kaku Gothic New', sans-serif;
@@ -142,6 +145,7 @@ nav{
     font-weight: bold;
     
 }
+/*Style för innehållsförteckningen*/
 .content{
     position: relative;
     height: auto;
@@ -233,9 +237,7 @@ nav{
     margin:auto;
     width:60%;
 }
-.indexBody{
-    margin-top: 100x;
-}
+/*Styling till kontaktformuläret*/
 .contactForm{
     position: relative;
     width: 50%;
@@ -283,8 +285,8 @@ nav{
     height: 200px;
     position: relative;
     
-  }
-  
+}
+/*Styling till knappen på tacksidan*/
 .buttonCenter {
     margin: 0;
     position: absolute;
